@@ -9,7 +9,6 @@ EXPOSE 80
 
 # Copy the app
 COPY . /app
-ADD dotnet run
 
 # Restore NuGet Packages
 RUN dotnet restore
