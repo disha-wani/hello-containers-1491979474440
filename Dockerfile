@@ -14,4 +14,4 @@ COPY . /app
 RUN dotnet restore
 
 # Start the app
-ENTRYPOINT dotnet run
+CMD ["microsoft/dotnet:1.0.0-preview2-sdk", "dotnet run"] 
